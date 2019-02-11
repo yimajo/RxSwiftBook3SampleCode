@@ -6,8 +6,8 @@
 
 ## 目次
 
-- 第3章 [サンプルコード](SergdortStyle/)
-- 第4章 [サンプルコード](KickstarterStyle/)
+- 第3章 [サンプルコード](Contents/SergdortStyle/)
+- 第4章 [サンプルコード](Contents/KickstarterStyle/)
 
 ## ご注意
 
