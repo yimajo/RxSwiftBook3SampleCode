@@ -281,13 +281,21 @@
 			path = KickstarterStyle;
 			sourceTree = "<group>";
 		};
+		A5ADB9F72211353F00E26A20 /* Contents */ = {
+			isa = PBXGroup;
+			children = (
+				A5ADB9A1221053AB00E26A20 /* SergdortStyle */,
+				A5ADB9CF2210571E00E26A20 /* KickstarterStyle */,
+			);
+			path = Contents;
+			sourceTree = "<group>";
+		};
 		A5ED4E5522103B6A00CD70D3 = {
 			isa = PBXGroup;
 			children = (
 				A5ED4E6022103B6A00CD70D3 /* RxSwiftBook3SampleCode */,
 				A5ED4E9722103ECA00CD70D3 /* Library */,
-				A5ADB9A1221053AB00E26A20 /* SergdortStyle */,
-				A5ADB9CF2210571E00E26A20 /* KickstarterStyle */,
+				A5ADB9F72211353F00E26A20 /* Contents */,
 				A5ED4E5F22103B6A00CD70D3 /* Products */,
 				868E80DB83E6586DF10A3CB5 /* Pods */,
 				5BCFB1ED42937E2DD41478CC /* Frameworks */,
