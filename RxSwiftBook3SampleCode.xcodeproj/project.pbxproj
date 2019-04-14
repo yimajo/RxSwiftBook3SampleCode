@@ -112,7 +112,6 @@
 /* Begin PBXFileReference section */
 		0957242645E153725AEE5F20 /* Pods-Sample-KickstarterStyle.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sample-KickstarterStyle.debug.xcconfig"; path = "Target Support Files/Pods-Sample-KickstarterStyle/Pods-Sample-KickstarterStyle.debug.xcconfig"; sourceTree = "<group>"; };
 		1DCDC7BFA4D885AFCC9E91D7 /* Pods-Sample-KickstarterStyle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sample-KickstarterStyle.release.xcconfig"; path = "Target Support Files/Pods-Sample-KickstarterStyle/Pods-Sample-KickstarterStyle.release.xcconfig"; sourceTree = "<group>"; };
-		2345BBD18D387248BCBE0D62 /* Pods_RxExampleStyleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxExampleStyleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		29130F22F16B5C058C44C9B3 /* Pods_KickstarterStyleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KickstarterStyleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4558844869A9FF113C2798BA /* Pods-RxExampleStyleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxExampleStyleTests.release.xcconfig"; path = "Target Support Files/Pods-RxExampleStyleTests/Pods-RxExampleStyleTests.release.xcconfig"; sourceTree = "<group>"; };
 		54849A60FD71E97DE637FDF7 /* Pods-SergdortStyleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SergdortStyleTests.release.xcconfig"; path = "Target Support Files/Pods-SergdortStyleTests/Pods-SergdortStyleTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -154,7 +153,6 @@
 		A8B36AE4ADF3B8240F38D17A /* Pods-Sample-SergdortStyle.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sample-SergdortStyle.debug.xcconfig"; path = "Target Support Files/Pods-Sample-SergdortStyle/Pods-Sample-SergdortStyle.debug.xcconfig"; sourceTree = "<group>"; };
 		A8EAC833C8FC90AB2F94F304 /* Pods-Sample-SergdortStyle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sample-SergdortStyle.release.xcconfig"; path = "Target Support Files/Pods-Sample-SergdortStyle/Pods-Sample-SergdortStyle.release.xcconfig"; sourceTree = "<group>"; };
 		A9937E22CCEDEF68FEF96F6E /* Pods-Sample-RxExampleStyle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sample-RxExampleStyle.release.xcconfig"; path = "Target Support Files/Pods-Sample-RxExampleStyle/Pods-Sample-RxExampleStyle.release.xcconfig"; sourceTree = "<group>"; };
-		AA5ABEDF263A362866C33DAE /* Pods_Sample_RxExampleStyle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sample_RxExampleStyle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B62FAF494AD8CE1AF89F7BA2 /* Pods-Sample-Library.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sample-Library.debug.xcconfig"; path = "Target Support Files/Pods-Sample-Library/Pods-Sample-Library.debug.xcconfig"; sourceTree = "<group>"; };
 		DC8697CFA3459260364FEC2C /* Pods-KickstarterStyleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KickstarterStyleTests.release.xcconfig"; path = "Target Support Files/Pods-KickstarterStyleTests/Pods-KickstarterStyleTests.release.xcconfig"; sourceTree = "<group>"; };
 		F6C5841B0D094247B2DD0724 /* Pods-RxExampleStyleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxExampleStyleTests.debug.xcconfig"; path = "Target Support Files/Pods-RxExampleStyleTests/Pods-RxExampleStyleTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -221,10 +219,8 @@
 		5BCFB1ED42937E2DD41478CC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				AA5ABEDF263A362866C33DAE /* Pods_Sample_RxExampleStyle.framework */,
 				8A57C48289A7EADC8F5F2C64 /* Pods_Sample_RxSwiftBook3SampleCode.framework */,
 				FE3D676088FDCA0D02CF89AE /* Pods_Sample_Library.framework */,
-				2345BBD18D387248BCBE0D62 /* Pods_RxExampleStyleTests.framework */,
 				97B2EE6BA585A83DD4BF94FE /* Pods_Sample_SergdortStyle.framework */,
 				8187D39653FE113C5459CAC3 /* Pods_SergdortStyleTests.framework */,
 				29130F22F16B5C058C44C9B3 /* Pods_KickstarterStyleTests.framework */,
@@ -647,7 +643,6 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-KickstarterStyleTests/Pods-KickstarterStyleTests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
 				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
@@ -658,7 +653,6 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
@@ -745,7 +739,6 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Sample-RxSwiftBook3SampleCode/Pods-Sample-RxSwiftBook3SampleCode-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 			);
@@ -753,7 +746,6 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 			);
@@ -771,7 +763,6 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-SergdortStyleTests/Pods-SergdortStyleTests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
 				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
@@ -782,7 +773,6 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
