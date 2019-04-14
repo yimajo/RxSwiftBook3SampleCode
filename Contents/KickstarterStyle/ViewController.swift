@@ -18,7 +18,7 @@ class ViewController: UIViewController {
   private let disposeBag = DisposeBag()
 
   // 1.
-  let viewModel = WikipediaSearchViewModel(
+  let viewModel: WikipediaSearchViewModelType = WikipediaSearchViewModel(
     wikipediaAPI: WikipediaDefaultAPI(URLSession: .shared)
   )
 
