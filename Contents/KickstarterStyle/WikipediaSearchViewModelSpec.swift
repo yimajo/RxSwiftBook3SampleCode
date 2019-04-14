@@ -49,8 +49,10 @@ class WikipediaSearchViewModelSpec: QuickSpec {
           let resultDescriptionObserver: TestableObserver<String>
 
           do {
-            let viewModel = WikipediaSearchViewModel(wikipediaAPI: wikipediaAPI,
-                                                     scheduler: scheduler)
+            let viewModel: WikipediaSearchViewModelType = WikipediaSearchViewModel(
+              wikipediaAPI: wikipediaAPI,
+              scheduler: scheduler
+            )
 
             let searchText = scheduler.createHotObservable(inputTextObservable)
 
