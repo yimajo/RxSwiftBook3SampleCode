@@ -38,11 +38,11 @@ extension WikipediaSearchViewModel: ViewModelType {
 
   func transform(input: Input) -> Output {
 
-    let filterdText = input.searchText
+    let filteredText = input.searchText
       .debounce(0.3, scheduler: scheduler)
       .share(replay: 1)
 
-    let sequence = filterdText
+    let sequence = filteredText
       .flatMapLatest { [unowned self] text -> Observable<Event<[WikipediaPage]>> in
         return self.wikipediaAPI
           .search(from: text)
@@ -57,7 +57,7 @@ extension WikipediaSearchViewModel: ViewModelType {
 
     // 4.
     wikipediaPages
-      .withLatestFrom(filterdText) { (pages, word) -> String in
+      .withLatestFrom(filteredText) { (pages, word) -> String in
         return "\(word) \(pages.count)件"
       }
       .bind(to: _searchDescription)
