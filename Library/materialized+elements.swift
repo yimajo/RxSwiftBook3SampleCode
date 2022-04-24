@@ -9,9 +9,9 @@
 import Foundation
 import RxSwift
 
-extension RxSwift.ObservableType where E: RxSwift.EventConvertible {
+extension RxSwift.ObservableType where Element: RxSwift.EventConvertible {
 
-    public func elements() -> RxSwift.Observable<E.ElementType> {
+    public func elements() -> RxSwift.Observable<Element.Element> {
         return filter { $0.event.element != nil }
             .map { $0.event.element! }
     }

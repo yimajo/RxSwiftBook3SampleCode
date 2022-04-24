@@ -1,6 +1,6 @@
 //
 //  WikipediaSearchViewModel.swift
-//  SergdortStyle
+//  KickstarterStyle
 //
 //  Created by Yoshinori Imajo on 2019/01/01.
 //  Copyright © 2019 Yoshinori Imajo. All rights reserved.
@@ -56,7 +56,7 @@ class WikipediaSearchViewModel: WikipediaSearchViewModelOutputs {
     self.error = _error.asObservable()
 
     let filteredText = searchTextChangedProperty
-      .debounce(0.3, scheduler: scheduler)
+      .debounce(.milliseconds(300), scheduler: scheduler)
       .share(replay: 1)
 
     let _searchResultText = PublishRelay<String>()

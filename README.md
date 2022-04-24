@@ -11,8 +11,8 @@
 
 ## 開発環境
 
-- Xcode 10.2
-- CocoaPods 1.6.0 以上
+- Xcode 13.3.1
+- RxSwift 6.5.0
 
 ## ご注意
 

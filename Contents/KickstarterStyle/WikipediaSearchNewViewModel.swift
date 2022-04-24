@@ -23,7 +23,7 @@ func wikipediaSearchViewModel(
   error: Observable<Error>
 ) {
     let filteredText = searchText
-      .debounce(0.3, scheduler: dependency.scheduler)
+      .debounce(.milliseconds(300), scheduler: dependency.scheduler)
       .share(replay: 1)
 
     let sequence = filteredText
