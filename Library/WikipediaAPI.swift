@@ -8,6 +8,7 @@
 
 import RxSwift
 import RxCocoa
+import Foundation
 
 public protocol WikipediaAPI {
     func search(from word: String) -> Observable<[WikipediaPage]>

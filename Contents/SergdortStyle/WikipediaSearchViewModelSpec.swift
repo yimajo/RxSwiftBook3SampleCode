@@ -11,6 +11,7 @@ import RxTest
 import RxBlocking
 import Quick
 import Nimble
+import Foundation
 
 @testable import Library
 @testable import SergdortStyle

@@ -10,6 +10,7 @@ import RxSwift
 import RxTest
 import Quick
 import Nimble
+import Foundation
 
 @testable import Library
 @testable import KickstarterStyle
