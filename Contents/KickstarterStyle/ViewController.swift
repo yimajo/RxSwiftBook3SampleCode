@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  SergdortStyle
+//  KickstarterStyle
 //
 //  Created by Yoshinori Imajo on 2019/01/01.
 //  Copyright © 2019 Yoshinori Imajo. All rights reserved.
