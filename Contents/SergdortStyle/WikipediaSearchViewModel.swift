@@ -39,7 +39,7 @@ extension WikipediaSearchViewModel: ViewModelType {
   func transform(input: Input) -> Output {
 
     let filterdText = input.searchText
-      .debounce(0.3, scheduler: scheduler)
+      .debounce(.milliseconds(300), scheduler: scheduler)
       .share(replay: 1)
 
     let sequence = filterdText

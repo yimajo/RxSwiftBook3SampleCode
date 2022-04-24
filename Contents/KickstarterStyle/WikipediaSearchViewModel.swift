@@ -56,7 +56,7 @@ class WikipediaSearchViewModel: WikipediaSearchViewModelOutputs {
     self.error = _error.asObservable()
 
     let filterdText = searchTextChangedProperty
-      .debounce(0.3, scheduler: scheduler)
+      .debounce(.milliseconds(300), scheduler: scheduler)
       .share(replay: 1)
 
     let _searchResultText = PublishRelay<String>()
