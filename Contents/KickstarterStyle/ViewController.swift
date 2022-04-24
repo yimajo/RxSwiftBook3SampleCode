@@ -26,8 +26,8 @@ class ViewController: UIViewController {
     super.viewDidLoad()
 
     searchBar.rx.text.orEmpty
-      .subscribe(onNext: { [unowned self] in
-        self.viewModel.inputs.searchTextChanged($0)
+      .subscribe(with: self, onNext: { owner, text in
+          owner.viewModel.inputs.searchTextChanged(text)
       })
       .disposed(by: disposeBag)
 
