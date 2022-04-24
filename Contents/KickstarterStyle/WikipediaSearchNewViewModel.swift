@@ -22,11 +22,11 @@ func wikipediaSearchViewModel(
   searchDescription: Observable<String>,
   error: Observable<Error>
 ) {
-    let filterdText = searchText
+    let filteredText = searchText
       .debounce(.milliseconds(300), scheduler: dependency.scheduler)
       .share(replay: 1)
 
-    let sequence = filterdText
+    let sequence = filteredText
       .flatMapLatest { text -> Observable<Event<[WikipediaPage]>> in
         guard !text.isEmpty else {
           return Observable.just([]).materialize()
@@ -43,7 +43,7 @@ func wikipediaSearchViewModel(
     let _searchResultText = PublishRelay<String>()
 
     wikipediaPages
-      .withLatestFrom(filterdText) { (pages, word) -> String in
+      .withLatestFrom(filteredText) { (pages, word) -> String in
         return "\(word) \(pages.count)件"
       }
       .bind(to: _searchResultText)

@@ -55,14 +55,14 @@ class WikipediaSearchViewModel: WikipediaSearchViewModelOutputs {
     let _error = PublishRelay<Error>()
     self.error = _error.asObservable()
 
-    let filterdText = searchTextChangedProperty
+    let filteredText = searchTextChangedProperty
       .debounce(.milliseconds(300), scheduler: scheduler)
       .share(replay: 1)
 
     let _searchResultText = PublishRelay<String>()
     searchDescription = _searchResultText.asObservable()
 
-    let sequence = filterdText
+    let sequence = filteredText
       .flatMapLatest { [unowned self] text -> Observable<Event<[WikipediaPage]>> in
         return self.wikipediaAPI
           .search(from: text)
@@ -71,7 +71,7 @@ class WikipediaSearchViewModel: WikipediaSearchViewModelOutputs {
       .share(replay: 1)
 
     wikipediaPages
-      .withLatestFrom(filterdText) { (pages, word) -> String in
+      .withLatestFrom(filteredText) { (pages, word) -> String in
         return "\(word) \(pages.count)件"
       }
       .bind(to: _searchResultText)
