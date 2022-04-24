@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  SergdortStyle
+//  KickstarterStyle
 //
 //  Created by Yoshinori Imajo on 2019/01/01.
 //  Copyright © 2019 Yoshinori Imajo. All rights reserved.
@@ -26,8 +26,8 @@ class ViewController: UIViewController {
     super.viewDidLoad()
 
     searchBar.rx.text.orEmpty
-      .subscribe(onNext: { [unowned self] in
-        self.viewModel.inputs.searchTextChanged($0)
+      .subscribe(with: self, onNext: { owner, text in
+          owner.viewModel.inputs.searchTextChanged(text)
       })
       .disposed(by: disposeBag)
 
