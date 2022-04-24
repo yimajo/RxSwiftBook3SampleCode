@@ -50,12 +50,13 @@ extension WikipediaSearchViewModel: ViewModelType {
       }
       .share(replay: 1)
 
+    // 3.
     let wikipediaPages = sequence.elements()
 
-    // 3.
+    // 4.
     let _searchDescription = PublishRelay<String>()
 
-    // 4.
+    // 5.
     wikipediaPages
       .withLatestFrom(filterdText) { (pages, word) -> String in
         return "\(word) \(pages.count)件"
@@ -63,8 +64,10 @@ extension WikipediaSearchViewModel: ViewModelType {
       .bind(to: _searchDescription)
       .disposed(by: disposeBag)
 
-    return Output(wikipediaPages: wikipediaPages,
-                  searchDescription: _searchDescription.asObservable(),
-                  error: sequence.errors())
+    return Output(
+        wikipediaPages: wikipediaPages,
+        searchDescription: _searchDescription.asObservable(),
+        error: sequence.errors() // 6.
+    )
   }
 }
